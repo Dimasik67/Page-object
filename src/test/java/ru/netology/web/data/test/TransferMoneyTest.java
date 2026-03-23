@@ -5,8 +5,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import page.DashboardPage;
-import page.LoginPage;
+import ru.netology.web.data.page.DashboardPage;
+import ru.netology.web.data.page.LoginPage;
 
 import static com.codeborne.selenide.Selenide.closeWindow;
 import static com.codeborne.selenide.Selenide.open;
