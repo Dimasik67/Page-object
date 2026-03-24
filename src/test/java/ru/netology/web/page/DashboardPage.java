@@ -3,11 +3,11 @@ package ru.netology.web.page;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import org.junit.jupiter.api.AfterEach;
 import ru.netology.web.data.DataHelper;
 import lombok.val;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
+import static com.codeborne.selenide.Selenide.*;
 
 public class DashboardPage {
     private SelenideElement heading = $("[data-test-id='dashboard']");
@@ -26,6 +26,10 @@ public class DashboardPage {
         val finish = text.indexOf(balanceFinish);
         val value = text.substring(start + balanceStart.length(), finish);
         return Integer.parseInt(value);
+    }
+    @AfterEach
+    void tearDown() {
+        closeWindow();
     }
 
     public RefillCardPage selectCard(DataHelper.CardInfo cardInfo) {
