@@ -1,14 +1,12 @@
-package ru.netology.web.test;
+package ru.netology.test;
 
-import ru.netology.web.data.DataHelper;
-import org.junit.jupiter.api.AfterEach;
+import ru.netology.data.DataHelper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import ru.netology.web.page.DashboardPage;
-import ru.netology.web.page.LoginPage;
+import ru.netology.page.DashboardPage;
+import ru.netology.page.LoginPage;
 
-import static com.codeborne.selenide.Selenide.closeWindow;
 import static com.codeborne.selenide.Selenide.open;
 
 public class TransferMoneyTest {
