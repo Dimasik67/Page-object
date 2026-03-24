@@ -23,11 +23,6 @@ public class TransferMoneyTest {
         verificationPage.validVerify(verificationCode);
     }
 
-    @AfterEach
-    void tearDown() {
-        closeWindow();
-    }
-
 
     @Test
     public void shouldTransferMoneyFromCardOneToCardTwo() {
